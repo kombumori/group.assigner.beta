@@ -22,7 +22,7 @@ curl -O https://raw.githubusercontent.com/kombumori/group.assigner.beta/main/mai
 curl -O https://raw.githubusercontent.com/kombumori/group.assigner.beta/main/requirements.txt
 pip install -r requirements.txt
 ```
-### 2. Excelファイルの準備
+### 3. Excelファイルの準備
 Excelの一番前にあるシートに
 
 |A列|B列|C列|D列|E列|
@@ -40,7 +40,7 @@ Excelの一番前にあるシートに
 
 そして、保存します。「**2. プログラムのダウンロード**」でデスクトップに作成した「group_assigner」フォルダに保存すると、後々楽かもしれません。
 
-### 3. グループの自動割り当て
+### 4. グループの自動割り当て
 では、コマンドプロンプト上で以下のコマンドを実行しましょう。
 ```
 cd desktop

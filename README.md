@@ -14,3 +14,21 @@ Windows10,11での使用を想定していますが、他の環境でもほぼ�
 [こちら](https://www.python.jp/install/windows/install.html)の記事を参考にPythonをインストールしてください。
 ### 2. プログラムのダウンロード
 コマンドプロンプト上で、以下のコマンドを実行してください。
+```
+cd desktop
+mkdir group_assigner
+cd group_assigner
+curl -O https://raw.githubusercontent.com/kombumori/group.assigner.beta/main/main.py
+curl -O https://raw.githubusercontent.com/kombumori/group.assigner.beta/main/requirements.txt
+pip install -r requirements.txt
+```
+### 2. Excelファイルの準備
+Excelの一番前にあるシートに
+
+| (番号) | (一緒にグループになりたい番号1) | (一緒にグループになりたい番号2) | (一緒にグループになりたい番号3) | (性別) |
+のように入力します。
+
+**例:**
+
+| 1 | 4 | 3 | 2 | 女 |
+| 2 | 8 | 7 | 6 | 男 |

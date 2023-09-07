@@ -19,8 +19,9 @@ cd desktop
 mkdir group_assigner
 cd group_assigner
 curl -O https://raw.githubusercontent.com/kombumori/group.assigner.beta/main/main.py
-curl -O https://raw.githubusercontent.com/kombumori/group.assigner.beta/main/requirements.txt
-pip install -r requirements.txt
+pip install fire
+pip install openpyxl
+pip install statistics
 ```
 ### 3. Excelファイルの準備
 Excelの一番前にあるシートに
@@ -45,7 +46,7 @@ Excelの一番前にあるシートに
 ```
 cd desktop
 cd group_assigner
-python3 main.py -f (Excelファイルのパス) -r (改善回数) -g (作成するグループ数) -rng (使用するExcel上の範囲)
+python main.py -f (Excelファイルのパス) -r (改善回数) -g (作成するグループ数) -rng (使用するExcel上の範囲)
 ```
 `-f`オプションにおいては、Excelファイルとmain.pyが同じフォルダに保存してある場合、フルパスではなくファイル名だけで指定することもできます（その他相対パスも使用可）
 
